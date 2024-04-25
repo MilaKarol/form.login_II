@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>from-login-II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="esquerda"><img src="./imagem/avatar2.png" alt=""></div>
+    <div class="direita">
+
+      <form method="" action="">
+        <div class="container">
+          <div class="page">
+            <h1>bem-Vindo(a)!</h1>
+            <!-- gmail -->
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label for="email">e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="xxxxxx@email.com" required>
+              </div>
+              <!-- Senha -->
+
+              <div class="form-group col-md-12">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="ex: 123@Gm" required>
+              </div>
+              <div class="form-group col-md-12">
+                <br><br>
+              </div>
+            </div>
+            <button type="button" calss="btn btn-primary" id="glow-on-hover" onclick="validarAcesso()">Entrar</button>
+          <!-- </div> -->
+        </div>
+      </form>
+    </div>
+    <div class="pergunta">
+        <!-- LEMBRAR SENHA -->
+      <div class="drt">
+          <p><a href="lembrar.html">Lembrar senha?</p></a>
+      </div>
+      <!-- CRIAR -->
+      <div class="esq">
+          <p>não possui uma conta? <a href="ciarconta.html">Criar</p></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="login.js"></script>
+</body>
+
+</html>

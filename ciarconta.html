@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lembrar Senha</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='lembrar.css'>
+</head>
+
+<body class="aw-layout-simple-page">
+    <div class="aw-layout-simple-page__container">
+        <form id="loginForm" action="login.html" method="POST">
+            <div class="aw-simple-panel">
+                <div class="aw-simple-panel__message">
+                    Criar uma Conta.
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="xxxxxx@email.com" required>
+                    </div>
+                    <!-- Senha -->
+
+                    <div class="form-group col-md-12">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="ex: 123@Gm" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <br><br>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="glow-on-hover">Criar nova conta</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Verifica se o formulário foi enviado
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            // Impede o envio do formulário
+            event.preventDefault();
+            // Redireciona para a página de login
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>
